@@ -1,0 +1,122 @@
+data\airports\countries_20190227.csv
+
+id: int64
+code: varchar(2) NULL
+name: varchar(44)
+continent: varchar(2) NULL
+wikipedia_link: varchar(73)
+keywords: varchar(51) NULL
+
+data\airports\airlines_20190227.dat
+
+id: int64
+name: varchar(81)
+alternative_name: varchar(30) NULL
+IATA: varchar(3) NULL
+ICAO: varchar(5) NULL
+callsign: varchar(50) NULL
+country: varchar(37) NULL
+active: varchar(1)
+
+data\airports\airports_20190227.dat
+
+Id: int64
+name: varchar(65)
+city: varchar(33) NULL
+country: varchar(32)
+IATA: varchar(3)
+ICAO: varchar(4)
+latitude: float64
+longtitude: float64 NULL
+altitude: int64 NULL
+timezone: varchar(5)
+DST: varchar(2)
+Tz database time zone: varchar(30)
+type: varchar(7)
+source: varchar(11)
+
+data\airports\planes_20180123.dat
+
+name: varchar(46)
+IATA: varchar(3)
+ICAO: varchar(4)
+
+data\airports\regions_20190227.csv
+
+id: int64
+code: varchar(7)
+local_code: varchar(4) NULL
+name: varchar(51)
+continent: varchar(2) NULL
+iso_country: varchar(2) NULL
+wikipedia_link: varchar(80) NULL
+keywords: varchar(93) NULL
+
+data\airports\routes_20190227.dat
+
+airline_code: varchar(3)
+airline_id: varchar(5)
+source_airport_code: varchar(3)
+source_airport_id: varchar(5)
+destination_airport_code: varchar(3)
+destination_airport_id: varchar(5)
+codeshare: varchar(1) NULL
+number_of_stops: int64 NULL
+equipment: varchar(35) NULL
+
+data\airports\airport-frequencies_20190227.csv
+
+id: int64
+airport_ref: int64
+airport_ident: varchar(7)
+type: varchar(16)
+description: varchar(64) NULL
+frequency_mhz: float64 NULL
+
+data\airports\runways_20190227.csv
+
+id: int64
+airport_ref: int64
+airport_ident: varchar(7)
+length_ft: float64 NULL
+width_ft: float64 NULL
+surface: varchar(63) NULL
+lighted: int64 NULL
+closed: int64 NULL
+le_ident: varchar(7) NULL
+le_latitude_deg: float64 NULL
+le_longitude_deg: float64 NULL
+le_elevation_ft: float64 NULL
+le_heading_degT: float64 NULL
+le_displaced_threshold_ft: float64 NULL
+he_ident: varchar(8) NULL
+he_latitude_deg: float64 NULL
+he_longitude_deg: float64 NULL
+he_elevation_ft: float64 NULL
+he_heading_degT: float64 NULL
+he_displaced_threshold_ft: float64 NULL
+Unnamed: 20: float64 NULL
+
+data\airports\navaids_20190227.csv
+
+id: int64
+filename: varchar(40)
+ident: varchar(8) NULL
+name: varchar(31)
+type: varchar(7)
+frequency_khz: int64
+latitude_deg: float64
+longitude_deg: float64
+elevation_ft: float64 NULL
+iso_country: varchar(2) NULL
+dme_frequency_khz: float64 NULL
+dme_channel: varchar(4) NULL
+dme_latitude_deg: float64 NULL
+dme_longitude_deg: float64 NULL
+dme_elevation_ft: float64 NULL
+slaved_variation_deg: float64 NULL
+magnetic_variation_deg: float64 NULL
+usageType: varchar(8) NULL
+power: varchar(7) NULL
+associated_airport: varchar(7) NULL
+Unnamed: 20: float64 NULL
